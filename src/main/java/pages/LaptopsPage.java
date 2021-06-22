@@ -101,4 +101,5 @@ public class LaptopsPage extends AbstractPage{
 	public String getTextSonyVaioProduct() {
 	 	return 	textSonyVaioAvailability.getText();
 	}
+	
 }

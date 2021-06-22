@@ -25,7 +25,7 @@ public class LaptopPageTest extends BaseTest{
 		WaitUtils.waitForJS(driver);
 		
 		String actualHpText = laptopPage.getTextHpProduct();
-		assertTrue("The product HP is not available. The actual availability is " + actualHpText, actualHpText.contains(expectedText));
+		assertTrue("The product HP is not available. The actual availability is: " + actualHpText, actualHpText.contains(expectedText));
 }
 
 	@Test
@@ -37,7 +37,7 @@ public class LaptopPageTest extends BaseTest{
 		WaitUtils.waitForJS(driver);
 		
 		String actualMacbookText = laptopPage.getTextMacbookProduct();
-		assertTrue("The product Macbook is not available. The actual availability is " + actualMacbookText, actualMacbookText.contains(expectedText));
+		assertTrue("The product Macbook is not available. The actual availability is: " + actualMacbookText, actualMacbookText.contains(expectedText));
 }
 	@Test
 	public void macbookAirProductTest () {
@@ -48,7 +48,7 @@ public class LaptopPageTest extends BaseTest{
 		WaitUtils.waitForJS(driver);
 		
 		String actualMacbookAirText = laptopPage.getTextMacbookAirProduct();
-		assertTrue("The product MacbookAir is not available. The actual availability is " + actualMacbookAirText, actualMacbookAirText.contains(expectedText));
+		assertTrue("The product MacbookAir is not available. The actual availability is: " + actualMacbookAirText, actualMacbookAirText.contains(expectedText));
 }
 	
 	@Test
@@ -60,7 +60,7 @@ public class LaptopPageTest extends BaseTest{
 		WaitUtils.waitForJS(driver);
 		
 		String actualMacbookProText = laptopPage.getTextMacbookProProduct();
-		assertTrue("The product MacbookPro is not available. The actual availability is " + actualMacbookProText, actualMacbookProText.contains(expectedText));
+		assertTrue("The product MacbookPro is not available. The actual availability is: " + actualMacbookProText, actualMacbookProText.contains(expectedText));
 }
 	
 	@Test
@@ -72,7 +72,7 @@ public class LaptopPageTest extends BaseTest{
 		WaitUtils.waitForJS(driver);
 		
 		String actualSonyVaioText = laptopPage.getTextSonyVaioProduct();
-		assertTrue("The product Sony VAIO is not available. The actual availability is " + actualSonyVaioText, actualSonyVaioText.contains(expectedText));
+		assertTrue("The product Sony VAIO is not available. The actual availability is: " + actualSonyVaioText, actualSonyVaioText.contains(expectedText));
 }
 }
 
