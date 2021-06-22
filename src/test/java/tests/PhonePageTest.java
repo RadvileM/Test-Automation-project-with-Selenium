@@ -22,7 +22,7 @@ public class PhonePageTest extends BaseTest{
 	public void htcPhoneTest () {
 	
 		phonePage.clickLinkPhones();
-		phonePage.clickLinkHtcProduct();
+		phonePage.clickPhone("HTC Touch HD");
 		WaitUtils.waitForJS(driver);
 		
 		String actualHtcText = phonePage.textHtcProductAvailability.getText();
@@ -33,7 +33,7 @@ public class PhonePageTest extends BaseTest{
 	public void iPhoneTest () {
 	
 		phonePage.clickLinkPhones();
-		phonePage.clickLinkiPhoneProduct();
+		phonePage.clickPhone("iPhone");
 		WaitUtils.waitForJS(driver);
 		
 		String actualiPhoneText = phonePage.textiPhoneProductAvailability.getText();
@@ -44,7 +44,7 @@ public class PhonePageTest extends BaseTest{
 	public void palmProductTest () {
 	
 		phonePage.clickLinkPhones();
-		phonePage.clickLinkPalmProduct();
+		phonePage.clickPhone("Palm Treo Pro");
 		WaitUtils.waitForJS(driver);
 		
 		String actualPalmText = phonePage.textPalmProductAvailability.getText();

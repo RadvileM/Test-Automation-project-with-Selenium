@@ -13,15 +13,6 @@ public class PhonesPage extends AbstractPage{
 		@FindBy(linkText = "Phones & PDAs") 
 		private WebElement linkPhones;
 		
-		@FindBy(xpath = "//*[@id=\"content\"]/div[2]/div[1]/div/div[2]/div[1]/h4/a")
-		private WebElement linkHtcProduct;
-		
-		@FindBy(xpath = "//*[@id=\"content\"]/div[2]/div[2]/div/div[2]/div[1]/h4/a")
-		private WebElement linkiPhoneProduct;
-		
-		@FindBy(xpath = "//*[@id=\"content\"]/div[2]/div[3]/div/div[2]/div[1]/h4/a")
-		private WebElement linkPalmProduct;
-		
 		
 //text
 		@FindBy (xpath = "//*[@id=\"content\"]/div/div[2]/ul[1]/li[4]")
@@ -45,27 +36,20 @@ public class PhonesPage extends AbstractPage{
 		linkPhones.click();
 	}
 	
-	public void clickLinkHtcProduct() {
-		linkHtcProduct.click();
-	}
 	
 	public String getTextHtcProduct() {
  	return 	textHtcProductAvailability.getText();
 }
 	
-	public void clickLinkiPhoneProduct() {
-		linkiPhoneProduct.click();
-	}
-	
 	public String getTextiPhoneProduct() {
  	return 	textiPhoneProductAvailability.getText();
 }
 	
-	public void clickLinkPalmProduct() {
-		linkPalmProduct.click();
-	}
-	
 	public String getTextPalmProduct() {
  	return 	textPalmProductAvailability.getText();
 }
+	
+	public void clickPhone (String productname) {
+		driver.findElement(By.xpath("//div[contains(@class, 'product-layout') and .//a[text()='"+ productname +"']]")).click();
+	}
 }
